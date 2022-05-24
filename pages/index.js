@@ -1,23 +1,29 @@
 import Script from 'next/script'
-import { attributes, react as HomeContent } from '../content/home.md'
+import Link from 'next/link'
 
 export default function Home() {
-  let { title, cats } = attributes
   return (
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-      <article>
-        <h1>{title}</h1>
-        <HomeContent />
+      <nav>
         <ul>
-          {cats.map((cat, k) => (
-            <li key={k}>
-              <h2>{cat.name}</h2>
-              <p>{cat.description}</p>
-            </li>
-          ))}
+          <li>
+            <Link href="/re-couture">
+              <a>re-couture</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/re-materialize">
+              <a>re-materialize</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/re-space">
+              <a>re-space</a>
+            </Link>
+          </li>
         </ul>
-      </article>
+      </nav>
     </>
   )
 }
