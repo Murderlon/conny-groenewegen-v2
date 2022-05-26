@@ -19,10 +19,12 @@ collections:
           widget: hidden,
           default: project-detail,
         }
-      - label: 'Category'
-        name: 'category'
-        widget: 'select'
-        options: ['collections', 'collaborations', 'exhibitions']
+      - label: Tags
+        name: tags
+        required: false
+        widget: list
+        fields:
+          - { label: Tag, name: tag, widget: text, required: false }
       - { name: title, label: Title }
       - {
           name: headerImage,
@@ -73,6 +75,12 @@ collections:
           widget: hidden,
           default: project-detail,
         }
+      - label: Tags
+        name: tags
+        required: false
+        widget: list
+        fields:
+          - { label: Tag, name: tag, widget: text, required: false }
       - { name: title, label: Title }
       - {
           name: headerImage,

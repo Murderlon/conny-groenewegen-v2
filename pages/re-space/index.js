@@ -7,11 +7,11 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import ProjectCard from '../../components/ProjectCard'
 
 export async function getStaticProps() {
-  const files = await fs.readdir('content/re-couture')
+  const files = await fs.readdir('content/re-space')
   const projects = []
 
   for (const file of files) {
-    const { attributes } = await import(`../../content/re-couture/${file}`)
+    const { attributes } = await import(`../../content/re-space/${file}`)
     attributes.slug = path.basename(file, '.md')
     projects.push(attributes)
   }
@@ -27,9 +27,9 @@ export default function ReCouture(props) {
   return (
     <>
       <Head>
-        <title>Conny Groenewegen | RE-couture</title>
+        <title>Conny Groenewegen | RE-space</title>
       </Head>
-      <div className="mt-12 mx-[5%] max-w-[100rem]">
+      <div className="my-12 mx-[5%] max-w-[100rem]">
         <nav>
           <ul>
             <li>
@@ -41,15 +41,15 @@ export default function ReCouture(props) {
             </li>
             <li>
               <Link href="/re-space">
-                <a className="nav-link nav-link--space">
-                  RE-<span>space</span>
+                <a className="nav-link nav-link--space nav-link--active">
+                  RE-<span className="text-space">space</span>
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/re-couture">
-                <a className="nav-link nav-link--couture nav-link--active">
-                  RE-<span className="text-couture">couture</span>
+                <a className="nav-link nav-link--couture ">
+                  RE-<span>couture</span>
                 </a>
               </Link>
             </li>
@@ -57,13 +57,14 @@ export default function ReCouture(props) {
         </nav>
         <main>
           {/* The nav is visually the 'h1' so we only put this here for SEO */}
-          <h1 className="invisible">re-couture</h1>
+          <h1 className="invisible">re-space</h1>
           <p className="my-4 max-w-2xl md:text-lg">
-            The fibers and threads I use reassemble the narrative to reach a
-            point where the material starts to create a path that follows its
-            own rules. A path travelling beyond guidance, storytelling and the
-            cliché, supported by the chant of the digital knitting machine and
-            the repetitive rhythm of classic hand sewing.
+            My spatial machines, derived from the age-old artisanal practices of
+            knitting and knotting reload public spaces with purpose and meaning.
+            When put to work, these structures create relationships with the
+            spaces they are placed in and stimulate our creative potential,
+            enabling us to actively reconnect with the new conditions for this
+            environment.
           </p>
           <ul className="mt-12">
             <ResponsiveMasonry
@@ -74,17 +75,14 @@ export default function ReCouture(props) {
                   <ProjectCard
                     key={project.title}
                     project={project}
-                    rgb={[252, 40, 30]}
-                    category="re-couture"
+                    rgb={[186, 186, 160]}
+                    category="re-space"
                   />
                 ))}
               </Masonry>
             </ResponsiveMasonry>
           </ul>
         </main>
-        <footer className='mt-24 p-8 shadow-md shadow-gray-600 w-full bg-white rounded-t-md h-80 text-black'>
-          <h2 className='font-semibold text-xl'>Conny Groenewegen</h2>
-        </footer>
       </div>
     </>
   )

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    images: {
+      layoutRaw: true,
+    },
+  },
   webpack: (cfg) => {
     cfg.module.rules.push({
       test: /\.md$/,
