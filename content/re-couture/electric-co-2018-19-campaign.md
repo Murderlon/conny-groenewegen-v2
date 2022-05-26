@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: ELECTRIC CO 2018-19 campaign
 headerImage:
   image: /assets/connygroenewegen_anoukvankalmthout_15b_highres.jpg

@@ -5,6 +5,7 @@ import path from 'node:path'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 import ProjectCard from '../../components/ProjectCard'
+import Footer from '../../components/Footer'
 
 export async function getStaticProps() {
   const files = await fs.readdir('content/re-space')
@@ -29,7 +30,7 @@ export default function ReCouture(props) {
       <Head>
         <title>Conny Groenewegen | RE-space</title>
       </Head>
-      <div className="my-12 mx-[5%] max-w-[100rem]">
+      <div className="mt-12 mx-[5%] max-w-[100rem]">
         <nav>
           <ul>
             <li>
@@ -83,6 +84,7 @@ export default function ReCouture(props) {
             </ResponsiveMasonry>
           </ul>
         </main>
+        <Footer />
       </div>
     </>
   )

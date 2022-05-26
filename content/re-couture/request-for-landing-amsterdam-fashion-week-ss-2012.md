@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collections
+tags:
+  - tag: Collection
 title: Request for Landing Amsterdam Fashion Week SS 2012
 headerImage:
   alt: Request for Landing Amsterdam Fashion Week SS 2012

@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: KC Grad
 headerImage:
   alt: KC Grad

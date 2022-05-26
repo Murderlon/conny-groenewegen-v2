@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: exhibitions
+tags:
+  - tag: Exhibition
 title: Making Of... Expo Textiel Museum 2011
 headerImage:
   alt: Making Of... Expo Textiel Museum 2011

@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collections
+tags:
+  - tag: Collection
 title: Primary Explorers Tokyo Fashion Week AW 2013-14
 headerImage:
   alt: primary explorers

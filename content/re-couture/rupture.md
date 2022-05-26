@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: exhibitions
+tags:
+  - tag: Exhibition
 title: Rupture
 headerImage:
   alt: Rupture

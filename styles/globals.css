@@ -7,11 +7,11 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
-  color: white;
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   font-size: 18px;
+  @apply text-gray-50;
 }
 
 a {
@@ -31,14 +31,21 @@ a {
   @apply before:block;
 }
 
+.footer-link {
+  @apply mr-4 underline hover:text-white my-2 block;
+}
+
+.footer-link--couture:hover span,
 .nav-link--couture:hover span {
   @apply text-couture;
 }
 
+.footer-link--space:hover span,
 .nav-link--space:hover span {
   @apply text-space;
 }
 
+.footer-link--materialize:hover span,
 .nav-link--materialize:hover span {
   @apply text-materialize;
 }

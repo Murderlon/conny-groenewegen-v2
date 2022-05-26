@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: Ralph Vaessen
 headerImage:
   alt: Ralph Vaessen

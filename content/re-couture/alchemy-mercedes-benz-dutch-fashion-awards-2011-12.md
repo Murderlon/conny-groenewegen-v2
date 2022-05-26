@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collections
+tags:
+  - tag: Collection
 title: Alchemy Mercedes Benz Dutch Fashion Awards 2011-12
 headerImage:
   alt: Alchemy Mercedes Benz Dutch Fashion Awards 2011-12

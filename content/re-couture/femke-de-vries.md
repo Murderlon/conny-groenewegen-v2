@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: Femke de Vries
 headerImage:
   alt: Femke de Vries

@@ -2,7 +2,7 @@
 templateKey: project-detail
 category: collaborations
 tags:
-  - tag: Collection
+  - tag: Collaboration
 title: Alchemy campaign shoot
 headerImage:
   alt: young woman, straight black haircut, dark red lips, pale skin, dark

@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: 'We Are Muze: OVO 2016'
 headerImage:
   alt: 'We Are Muze: OVO 2016'

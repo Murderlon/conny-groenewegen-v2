@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: exhibitions
+tags:
+  - tag: Exhibition
 title: Salon 2011
 headerImage:
   alt: Salon 2011

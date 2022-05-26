@@ -5,6 +5,7 @@ import path from 'node:path'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 import ProjectCard from '../../components/ProjectCard'
+import Footer from '../../components/Footer'
 
 export async function getStaticProps() {
   const files = await fs.readdir('content/re-couture')
@@ -82,9 +83,7 @@ export default function ReCouture(props) {
             </ResponsiveMasonry>
           </ul>
         </main>
-        <footer className='mt-24 p-8 shadow-md shadow-gray-600 w-full bg-white rounded-t-md h-80 text-black'>
-          <h2 className='font-semibold text-xl'>Conny Groenewegen</h2>
-        </footer>
+        <Footer />
       </div>
     </>
   )

@@ -12,7 +12,7 @@ import markdownToHTML from '../../lib/markdownToHTML'
 import createColoredBase64 from '../../lib/createColoredBase64'
 
 export async function getStaticPaths() {
-  const files = await fs.readdir('content/re-couture')
+  const files = await fs.readdir('content/re-space')
 
   const paths = files.map((file) => ({
     params: { slug: path.basename(file, '.md') },
@@ -25,9 +25,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { attributes } = await import(
-    `../../content/re-couture/${params.slug}.md`
+    `../../content/re-space/${params.slug}.md`
   )
-  const html = await markdownToHTML('re-couture', params.slug)
+  const html = await markdownToHTML('re-space', params.slug)
 
   return { props: { attributes, html } }
 }
@@ -44,9 +44,9 @@ export default function ReCouture(props) {
         <nav>
           <ul>
             <li>
-              <Link href="/re-couture">
-                <a className="nav-link nav-link--couture">
-                  RE-<span>couture</span>
+              <Link href="/re-space">
+                <a className="nav-link nav-link--space">
+                  RE-<span>space</span>
                 </a>
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function ReCouture(props) {
                       height={100}
                       sizes="100vw, (min-width: 700px) 50vw, (min-width: 1100px) 25vw"
                       placeholder="blur"
-                      blurDataURL={createColoredBase64(252, 40, 30)}
+                      blurDataURL={createColoredBase64(186, 186, 160)}
                     />
                   </div>
                 ))}

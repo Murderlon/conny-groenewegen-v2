@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collections
+tags:
+  - tag: Collection
 title: ELECTRIC CO sweaters and bomber jackets
 headerImage:
   alt: 'girl with black helmet, structured white knit sweater'

@@ -2,6 +2,8 @@
 templateKey: project-detail
 category: collections
 title: Eclipse AW 2009-10
+tags:
+  - tag: Collection
 headerImage:
   alt: Eclipse AW 2009-10
   image: /assets/01-dff_f09_groenewegen_003.jpg

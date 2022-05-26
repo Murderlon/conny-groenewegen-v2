@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: 'We Are Muze: A Cheryl 2017'
 headerImage:
   alt: 'We Are Muze: A Cheryl 2017'

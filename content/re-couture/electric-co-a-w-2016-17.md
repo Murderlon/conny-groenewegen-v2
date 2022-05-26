@@ -1,6 +1,8 @@
 ---
 templateKey: project-detail
 category: collaborations
+tags:
+  - tag: Collaboration
 title: ELECTRIC CO A/W 2016-17
 headerImage:
   image: /assets/muze_groenewegen_wcfs17_021b004.jpg
