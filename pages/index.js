@@ -1,6 +1,6 @@
 import Script from 'next/script'
 import Link from 'next/link'
-// import markdownToHTML from "../lib/markdownToHTML";
+import ImageLink from "../components/ImageLink"
 
 export default function Home() {
   return (
@@ -8,51 +8,9 @@ export default function Home() {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <nav className="mx-auto mt-16 border-2 border-white md:max-w-max">
         <ul className="md:flex md:space-x-20">
-          <li className="">
-            <h2 className="text-xl font-bold">
-              RE-<span className="text-couture">couture</span>
-            </h2>
-            <img
-              className="h-64 w-64 rounded-full"
-              src="/assets/06-mg_4190-web.jpg"
-            />
-            <Link href="/re-couture">
-              <a className="rounded-sm bg-couture p-1 text-sm uppercase text-black">
-                Explore →
-              </a>
-            </Link>
-            <p>Couture</p>
-          </li>
-          <li className="">
-            <h2 className="text-xl font-bold">
-              RE-<span className="text-materialize">materialize</span>
-            </h2>
-            <img
-              className="h-64 w-64 rounded-full"
-              src="/assets/02-nugget-coat.jpg"
-            />
-            <Link href="/re-materialize">
-              <a className="rounded-sm bg-materialize p-1 text-sm uppercase text-black">
-                Explore →
-              </a>
-            </Link>
-            <p>Materialize</p>
-          </li>
-          <li className="">
-            <h2 className="text-xl font-bold">
-              RE-<span className="text-space">space</span>
-            </h2>
-            <img
-              className="h-64 w-64 rounded-full"
-              src="/assets/_05-hw_6119-proto-3-1.jpg"
-            />
-            <Link href="/re-space">
-              <a className="rounded-sm bg-space p-1 text-sm uppercase text-black">
-                Explore →
-              </a>
-            </Link>
-            <p>Space</p>
-          </li>
+          <ImageLink href="/re-couture" title="Couture" image="/assets/06-mg_4190-web.jpg" color='couture' />
+          <ImageLink href="/re-materialize" title="Materialize" image="/assets/02-nugget-coat.jpg" color='materialize' />
+          <ImageLink href="/re-space" title="Space" image="/assets/_05-hw_6119-proto-3-1.jpg" color='space' />
         </ul>
       </nav>
 
