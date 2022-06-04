@@ -11,7 +11,7 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   font-size: 18px;
-  @apply text-gray-50;
+  @apply text-gray-100;
 }
 
 a {
@@ -52,4 +52,20 @@ a {
 
 .nav-link--active {
   @apply text-white before:block before:text-white;
+}
+
+.image-shadow-inset span {
+  @apply relative after:absolute after:block after:rounded-full after:h-full after:w-full after:left-0 after:top-0;
+}
+
+.image-shadow-inset span::after {
+  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset, black 0px 0px 5px inset;
+}
+
+.video-shadow-inset {
+  @apply relative after:absolute after:block after:rounded-full after:h-full after:w-full after:left-0 after:top-0;
+}
+
+.video-shadow-inset::after {
+  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset, black 0px 0px 5px inset;
 }
