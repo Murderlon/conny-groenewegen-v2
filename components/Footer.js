@@ -14,11 +14,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <a className="footer-link">About</a>
-                </Link>
-              </li>
-              <li>
                 <Link href="/re-materialize">
                   <a className="footer-link footer-link--materialize">
                     RE-<span>materialize</span>
