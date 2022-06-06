@@ -8,11 +8,11 @@ import ProjectCard from '../../components/ProjectCard'
 import Footer from '../../components/Footer'
 
 export async function getStaticProps() {
-  const files = await fs.readdir('content/re-couture')
+  const files = await fs.readdir('content/re-materialize')
   const projects = []
 
   for (const file of files) {
-    const { attributes } = await import(`../../content/re-couture/${file}`)
+    const { attributes } = await import(`../../content/re-materialize/${file}`)
     attributes.slug = path.basename(file, '.md')
     projects.push(attributes)
   }
@@ -28,15 +28,15 @@ export default function ReCouture(props) {
   return (
     <>
       <Head>
-        <title>RE-couture | Conny Groenewegen</title>
+        <title>RE-materialize | Conny Groenewegen</title>
       </Head>
-      <div className="mt-12 mx-[5%] max-w-[100rem]">
+      <div className="mx-[5%] mt-12 max-w-[100rem]">
         <nav>
           <ul>
             <li>
               <Link href="/re-materialize">
-                <a className="nav-link nav-link--materialize">
-                  RE-<span>materialize</span>
+                <a className="nav-link nav-link--materialize nav-link--active">
+                  RE-<span className="text-materialize">materialize</span>
                 </a>
               </Link>
             </li>
@@ -49,8 +49,8 @@ export default function ReCouture(props) {
             </li>
             <li>
               <Link href="/re-couture">
-                <a className="nav-link nav-link--couture nav-link--active">
-                  RE-<span className="text-couture">couture</span>
+                <a className="nav-link nav-link--couture">
+                  RE-<span>couture</span>
                 </a>
               </Link>
             </li>
@@ -58,13 +58,17 @@ export default function ReCouture(props) {
         </nav>
         <main>
           {/* The nav is visually the 'h1' so we only put this here for SEO */}
-          <h1 className="invisible">re-couture</h1>
+          <h1 className="invisible">re-materialize</h1>
           <p className="my-4 max-w-2xl md:text-lg">
-            The fibers and threads I use reassemble the narrative to reach a
-            point where the material starts to create a path that follows its
-            own rules. A path travelling beyond guidance, storytelling and the
-            cliché, supported by the chant of the digital knitting machine and
-            the repetitive rhythm of classic hand sewing.
+            The fabrics are knitted with plastic monofilaments, up-cycled from
+            the textile industry. The looped plastic monofilament rhythmically
+            creates rigidity, which allows the support and direction to softer
+            yarns made of virgin wool and opulent fake fur. The knitted
+            monofilament becomes a constructive 3D element in ELECTRIC CO
+            designs that graphically accentuates the outlines of the upper
+            body’s muscular character. By adhering to the anatomy and turning it
+            inside out to create an exoskeleton, the shapes have both a
+            futuristic and archaic appearance.
           </p>
           <ul className="mt-12">
             <ResponsiveMasonry
@@ -75,8 +79,8 @@ export default function ReCouture(props) {
                   <ProjectCard
                     key={project.title}
                     project={project}
-                    rgb={[252, 40, 30]}
-                    category="re-couture"
+                    rgb={[181, 181, 181]}
+                    category="re-materialize"
                   />
                 ))}
               </Masonry>

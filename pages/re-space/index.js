@@ -69,7 +69,7 @@ export default function ReCouture(props) {
           </p>
           <ul className="mt-12">
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 200: 1, 500: 2, 800: 3, 1100: 4 }}
+              columnsCountBreakPoints={{ 200: 1, 500: 2, 768: 3, 1024: 4 }}
             >
               <Masonry gutter="24px">
                 {projects.map((project) => (
