@@ -35,7 +35,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Personal website of Conny Groenewegen"
           />
-          <meta property="og:image" content="/OGimage.png" />
+          <meta property="og:image" content="/OGimage.jpg" />
           <meta property="og:site_name" content="Conny Groenewegen" />
           <meta property="og:url" content="https://connygroenewegen.nl" />
 
