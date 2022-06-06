@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import Vimeo from '@u-wave/react-vimeo'
 import Footer from '../../components/Footer'
 
 import markdownToHTML from '../../lib/markdownToHTML'
@@ -55,12 +56,28 @@ export default function ReCouture(props) {
         <main>
           <h1 className="font-semibold text-4xl">{attributes.title}</h1>
           <div
-            className="my-4 max-w-2xl md:text-lg"
+            className="prose prose-invert my-4 max-w-2xl md:text-lg"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+          {attributes?.vimeoID?.length > 0 ? (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="overflow-hidden rounded-md col-span-2 border-2 border-gray-600">
+                <Vimeo
+                  video={attributes.vimeoID}
+                  responsive={true}
+                  autoplay={true}
+                  loop={true}
+                  controls={false}
+                  background={true}
+                />
+              </div>
+            </div>
+          ) : null}
+
           <ul className="mt-12">
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 200: 1, 500: 2, 800: 3, 1100: 4 }}
+              columnsCountBreakPoints={{ 200: 1, 500: 2, 768: 3, 1024: 4 }}
             >
               <Masonry gutter="24px">
                 {attributes.images.map((image, idx) => (
