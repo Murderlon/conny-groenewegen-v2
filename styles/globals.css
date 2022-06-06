@@ -32,7 +32,7 @@ a {
 }
 
 .footer-link {
-  @apply mr-4 underline hover:text-white my-2 block;
+  @apply my-2 mr-4 block underline hover:text-white;
 }
 
 .footer-link--couture:hover span,
@@ -55,17 +55,19 @@ a {
 }
 
 .image-shadow-inset span {
-  @apply relative after:absolute after:block after:rounded-full after:h-full after:w-full after:left-0 after:top-0;
+  @apply relative after:absolute after:left-0 after:top-0 after:block after:h-full after:w-full after:rounded-full;
 }
 
 .image-shadow-inset span::after {
-  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset, black 0px 0px 5px inset;
+  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset,
+    black 0px 0px 5px inset;
 }
 
 .video-shadow-inset {
-  @apply relative after:absolute after:block after:rounded-full after:h-full after:w-full after:left-0 after:top-0;
+  @apply relative after:absolute after:left-0 after:top-0 after:block after:h-full after:w-full after:rounded-full;
 }
 
 .video-shadow-inset::after {
-  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset, black 0px 0px 5px inset;
+  box-shadow: black 0px 0px 20px inset, black 0px 0px 10px inset,
+    black 0px 0px 5px inset;
 }

@@ -8,30 +8,33 @@ import spaceImage from '../public/assets/_01-hw_6109-proto1-1.jpg'
 import materializeImage from '../public/assets/materialize-preview.jpg'
 
 function Category(props) {
-  const { category, textClass, bgClass, children } = props
+  const { category, text, textClass, bgClass, children } = props
 
   return (
-    <li className="mx-auto md:mx-0 mt-12 w-[20em]">
-      <h2 className="relative top-4 z-10 -mb-4 font-mono text-4xl font-semibold">
-        RE-<span className={textClass}>{category}</span>
-      </h2>
-      <div className="image-shadow-inset">{children}</div>
-      <div className="relative z-10 -mt-4 flex justify-end">
-        <Link href={`/re-${category}`}>
-          <a
-            className={`mr-4 rounded ${bgClass} p-2 text-right uppercase text-black`}
-          >
-            Explore →
-          </a>
-        </Link>
+    <li className="mx-auto mt-12 w-[20em] md:mx-0">
+      <div className="relative z-10 -mb-12">
+        <h2 className="font-mono text-4xl font-semibold">
+          RE-<span className={textClass}>{category}</span>
+        </h2>
+        <p className="mb-4 text-gray-500">{text}</p>
+        <div className="flex">
+          <Link href={`/re-${category}`}>
+            <a
+              className={`mr-4 rounded shadow-lg ${bgClass} p-2 text-right uppercase text-black`}
+            >
+              Explore →
+            </a>
+          </Link>
+        </div>
       </div>
+      <div className="image-shadow-inset -mt-8">{children}</div>
     </li>
   )
 }
 
 export default function Home() {
   return (
-    <div className="m-12 max-w-[80em] mx-auto">
+    <div className="mx-auto max-w-4xl p-12">
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
 
       <Head>
@@ -39,75 +42,84 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className=''>
-        <h1 className="text-5xl lg:text-8xl font-semibold">Conny Groenewegen</h1>
-        <p className="my-4 text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <div className="">
+          <h1 className="text-5xl font-semibold lg:text-8xl">
+            Conny Groenewegen
+          </h1>
+          <p className="my-4 text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
 
         <nav>
-          <ul className="flex flex-col md:flex-row md:justify-between">
-            <Category
-              category="couture"
-              textClass="text-couture"
-              bgClass="bg-couture"
-            >
-              <Image
-                alt="Fashion by Conny Groenewegen"
-                src={coutureImage}
-                layout="responsive"
-                width={400}
-                height={400}
-                objectFit="cover"
-                placeholder="blur"
-                style={{ borderRadius: '50%' }}
-              />
-            </Category>
+          <ul className="">
+            <div className="flex flex-col justify-between md:flex-row">
+              <Category
+                category="couture"
+                textClass="text-couture"
+                bgClass="bg-couture"
+                text="High-end, experimental fashion"
+              >
+                <Image
+                  alt="Fashion by Conny Groenewegen"
+                  src={coutureImage}
+                  layout="responsive"
+                  width={400}
+                  height={400}
+                  objectFit="cover"
+                  placeholder="blur"
+                  style={{ borderRadius: '50%' }}
+                />
+              </Category>
 
-            <Category
-              category="space"
-              textClass="text-space"
-              bgClass="bg-space"
-            >
-              <Image
-                alt="Exhibitions by Conny Groenewegen"
-                src={spaceImage}
-                layout="responsive"
-                width={400}
-                height={400}
-                objectFit="cover"
-                placeholder="blur"
-                style={{ borderRadius: '50%' }}
-              />
-            </Category>
+              <Category
+                category="space"
+                textClass="text-space"
+                bgClass="bg-space"
+                text="Exhibitions and installations"
+              >
+                <Image
+                  alt="Exhibitions by Conny Groenewegen"
+                  src={spaceImage}
+                  layout="responsive"
+                  width={400}
+                  height={400}
+                  objectFit="cover"
+                  placeholder="blur"
+                  style={{ borderRadius: '50%' }}
+                />
+              </Category>
+            </div>
 
-            <Category
-              category="materialize"
-              textClass="text-materialize"
-              bgClass="bg-materialize"
-            >
-              <Image
-                alt="Fabrics by Conny Groenewegen"
-                src={materializeImage}
-                layout="responsive"
-                width={400}
-                height={400}
-                objectFit="cover"
-                placeholder="blur"
-                style={{ borderRadius: '50%' }}
-              />
-            </Category>
+            <div className="-mt-8 flex justify-center">
+              <Category
+                category="materialize"
+                textClass="text-materialize"
+                bgClass="bg-materialize"
+                text="Uniquely made fabrics"
+              >
+                <Image
+                  alt="Fabrics by Conny Groenewegen"
+                  src={materializeImage}
+                  layout="responsive"
+                  width={400}
+                  height={400}
+                  objectFit="cover"
+                  placeholder="blur"
+                  style={{ borderRadius: '50%' }}
+                />
+              </Category>
+            </div>
           </ul>
         </nav>
 
-        <div className="mx-auto md:mx-0 max-w-md">
+        <div className="mx-auto max-w-md md:mx-0">
           <h2 className="mt-12 text-4xl">Organisations</h2>
           <p className="my-2">something something explanation </p>
         </div>
 
-        <div className="mx-auto md:mx-0 grid md:grid-cols-2 max-w-md md:max-w-2xl gap-4">
+        <div className="grid gap-4 md:mx-0 md:grid-cols-2">
           <article className="mt-12 flex gap-4">
             <div>
               <div className="video-shadow-inset relative h-24 w-24">
