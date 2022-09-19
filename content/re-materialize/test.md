@@ -1,10 +1,9 @@
 ---
 templateKey: project-detail
 tags:
-  - tag: Something
-title: Test test test
+title: Kay
 headerImage:
-  alt: test
+  alt: Kay
   image: /assets/Kay.jpg
 vimeoID: ""
 images:
@@ -12,4 +11,3 @@ images:
     image: /assets/Kay.jpg
 ---
 
-Test
