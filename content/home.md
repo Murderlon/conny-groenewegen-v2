@@ -1,10 +1,11 @@
 ---
 templateKey: home
-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+subtitle: Conny Groenewegen is a multidisciplinary designer who uses an a-typical approach to form three-dimensional designs through techniques such as laser cutting, knitting and knotting.
 ---
 
-After completing a study in fashion and visual art, I started making drawings. Fascinated by the clear line I drew wall-sized drawings of landscapes with gossamer pencil lines in a format where you could step into. In the next phase the paper came off the wall and became spatial. Through recesses for heads you then literally became part of the drawing. The conversion from 2D to 3D, from line to thread and vice versa is a continuous theme in all my work.
-
-My area of expertise is knitting. I mostly create material using rows of interlocking loops from one continuous thread. All loops are essential; if one breaks, it creates a hole. I consider this as symbolic of interpersonal relationships: you cannot impose or force anything without causing damage. Similarly, I enter into collaborations in which I challenge and am likewise challenged. The Fashion Machine project has arisen from this philosophy and from my confrontation with fashion’s volatility and high turn-around speed.
-
-In addition, my work is an invitation to look in a different way to recognizable archetypal forms with the aim to redefine them. For this I develop unexpected materials and learn how to master a technique. I do this via prototypes which lead me on to the desired form. The results are snapshots and temporary proposals, because new insights emerge that lead to a next prototype. Additionally, together with the people I work with, we adjust the set of rules whenever we feel invited to in order to enter a new, interesting playfield.
+After studying fashion and graduating as a visual artist, I spent years, fascinated by the bright line, making wall-sized drawings of landscapes with thin pencil in a format you could step into. In the next phase, the paper came off the wall and became spatial. Then, through cutouts for heads, the viewer could literally become part of the drawing. The relationship with the body, the conversion from 2D to 3D, from line tomthread and vice versa is an ongoing theme in all my work: from a garment or an activist collective knitted installation around a building to a knotted balustrade.
+ 
+Using a thread is like drawing. For example, in knitting, the material I work with is created from rows of interlocking loops of one continious line. Here all the loops are important, if one breaks you have a hole. This symbolizes interpersonal relationships, you cannot impose or force something on someone without causing damage.
+In a similar way, I engage in collaborations in which I challenge and am challenged because at least two points are needed, to see sharply and as a condition for a clear line.
+ 
+In addition, my work is an invitation to look at recognizable archetypal forms in a different way with the aim of reinterpreting them. To do this, I develop unexpected materials and learn new techniques. This leads to prototypes in which I steer towards the desired form. The results are like snapshots and temporary proposals, as new insights keep emerging that lead to the next prototype.  The rules are fluid and are always adjusted to the new situation, which happens in conjunction with the people I work with.

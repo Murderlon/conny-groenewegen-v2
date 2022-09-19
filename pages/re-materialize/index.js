@@ -71,20 +71,24 @@ export default function ReCouture(props) {
             futuristic and archaic appearance.
           </p>
           <ul className="mt-12">
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 200: 1, 500: 2, 768: 3, 1024: 4 }}
-            >
-              <Masonry gutter="24px">
-                {projects.map((project) => (
-                  <ProjectCard
-                    key={project.title}
-                    project={project}
-                    rgb={[181, 181, 181]}
-                    category="re-materialize"
-                  />
-                ))}
-              </Masonry>
-            </ResponsiveMasonry>
+            {projects.length > 0 ? (
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 200: 1, 500: 2, 768: 3, 1024: 4 }}
+              >
+                <Masonry gutter="24px">
+                  {projects.map((project) => (
+                    <ProjectCard
+                      key={project.title}
+                      project={project}
+                      rgb={[181, 181, 181]}
+                      category="re-materialize"
+                    />
+                  ))}
+                </Masonry>
+              </ResponsiveMasonry>
+            ) : (
+              <p className="text-lg text-gray-400">No projects yet</p>
+            )}
           </ul>
         </main>
         <Footer />
