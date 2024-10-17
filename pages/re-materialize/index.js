@@ -34,6 +34,11 @@ export default function ReCouture(props) {
         <nav>
           <ul>
             <li>
+              <Link href="/">
+                <a className="nav-link">/</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/re-materialize">
                 <a className="nav-link nav-link--materialize nav-link--active">
                   RE-<span className="text-materialize">materialize</span>

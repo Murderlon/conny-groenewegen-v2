@@ -30,9 +30,14 @@ export default function ReCouture(props) {
       <Head>
         <title>Conny Groenewegen | RE-space</title>
       </Head>
-      <div className="mt-12 mx-[5%] max-w-[100rem]">
+      <div className="mx-[5%] mt-12 max-w-[100rem]">
         <nav>
           <ul>
+            <li>
+              <Link href="/">
+                <a className="nav-link">/</a>
+              </Link>
+            </li>
             <li>
               <Link href="/re-materialize">
                 <a className="nav-link nav-link--materialize">
